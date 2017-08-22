@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function cfibonacci() {
+   var fib = []; // Initialize array!
+
+fib[0] = 0;
+fib[1] = 1;
+for(i=2; i<=10; i++)
+{
+   
+    fib[i] = fib[i-2] + fib[i-1];
+    alert(fib[i]);
+}
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="demo_form.asp"
+onsubmit="return cfibonacci()" method="post">
+fibonacci numbers: <input type="text" name="i">
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function cfibonacci() {
+   var fib = []; // Initialize array!
+
+fib[0] = 0;
+fib[1] = 1;
+for(i=2; i<=10; i++)
+{
+   
+    fib[i] = fib[i-2] + fib[i-1];
+    alert(fib[i]);
+}
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="#"
+onsubmit="return cfibonacci()" method="post">
+fibonacci numbers: <input type="text" name="i">
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

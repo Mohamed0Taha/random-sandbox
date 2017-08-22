@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+First Number: <input id="xv" value="x"><br>
+Second Number: <input id="yv" value="y"><br>
+Third Number: <input id="zv" value="z"><br>
+<button onclick="return calculate()">Calculate</button>
+
+<table style="width:100%">
+  <tr>
+    <td>Max</td>
+    <td>Min</td>    
+    <td>Sum</td>
+  </tr>
+  <tr>
+    <td ><p id="maxtag"></p></td>
+    <td ><p id="mintag"></p></td>   
+    <td ><p id="sumtag"></p></td>
+  </tr>
+ 
+</table>
+
+
+
+<script>function calculate(){
+
+  var x = document.getElementById("xv").value;
+   var y = document.getElementById("yv").value;
+    var z = document.getElementById("zv").value;
+
+   
+
+document.getElementById("maxtag").innerHTML = Math.max(x,y,z);
+document.getElementById("mintag").innerHTML = Math.max(x,y,z);
+document.getElementById("sumtag").innerHTML = (x+y+z);
+
+ }
+</script>
+
+</body>
+</html>

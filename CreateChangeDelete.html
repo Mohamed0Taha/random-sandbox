@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="return create()">Create</button>
+<button onclick="return colorChange()">Change</button>
+<button onclick="return deleteElement()">Delete</button>
+
+<script>
+
+function colorChange() {
+    document.getElementById("teacher").style.color = "red";
+}
+
+function create() {
+    var para = document.createElement("P");
+    para.setAttribute("id", "teacher");
+    var t = document.createTextNode("This is a teacher");
+    para.appendChild(t);
+    document.body.appendChild(para);
+}
+
+function deleteElement() {
+var element = document.getElementById("teacher");   // Get the  element with id="teacher"
+element.outerHTML = "";
+delete element;
+}
+
+</script>
+</body>
+</html>

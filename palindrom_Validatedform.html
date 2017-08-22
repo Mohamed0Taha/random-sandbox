@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter your string to test it: <input id="xv" value="x"><br>
+<button onclick="return check()">Test</button>
+<script>
+
+<script>
+
+ 
+   
+
+    
+function check() {
+	//Form validation :
+    var x = document.getElementById("xv").value;
+        if (x == null || x == "") {
+        alert("A string must be entered");
+        }
+        // Validation is done 
+        else {
+
+    function checkPalindrom(str) {
+    return str == str.split('').reverse().join('');
+}
+var str=checkPalindrom(x);
+if (str ==true){
+    document.write("true");
+} 
+else {
+   document.write("false");
+}}}
+
+
+</script>
+
+</body>
+</html>
